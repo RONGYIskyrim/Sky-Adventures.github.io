@@ -1,46 +1,81 @@
-/* styles.css */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
-}
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+  }
 
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-}
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  text-align: right;
-}
+  h1 {
+    margin: 0;
+    font-size: 28px;
+    text-transform: uppercase; /* 添加大写字母转换 */
+  }
 
-nav ul li {
-  display: inline;
-  margin-left: 20px;
-}
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #555; /* 添加导航背景颜色 */
+  }
 
-main {
-  padding: 20px;
-}
+  nav ul li {
+    margin: 0 10px;
+  }
 
-.intro {
-  font-size: 1.2em;
-  margin-bottom: 20px;
-}
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px; /* 添加导航链接内边距 */
+    border-radius: 3px; /* 添加导航链接圆角 */
+    transition: background-color 0.3s; /* 添加背景颜色过渡效果 */
+  }
 
-.features {
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+  nav ul li a:hover {
+    background-color: #777; /* 修改为你喜欢的悬停背景颜色 */
+  }
 
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-}
+  main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 添加内容区域阴影效果 */
+  }
+
+  .intro a {
+    color: #333;
+    text-decoration: underline;
+  }
+
+  .features {
+    margin-top: 20px;
+  }
+
+  .features h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #555; /* 修改特征标题颜色 */
+  }
+
+  .features ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+</style>
+
